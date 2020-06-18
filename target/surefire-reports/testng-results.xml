@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="14575" started-at="2020-06-12T15:02:15 EEST" finished-at="2020-06-12T15:02:30 EEST">
+    <groups>
+      <group name="regression">
+        <method signature="CheckCountOfIpadInStockTest.checkCountOfIpadInStockTest()[pri:0, instance:test.CheckCountOfIpadInStockTest@4af0df05]" name="checkCountOfIpadInStockTest" class="test.CheckCountOfIpadInStockTest"/>
+        <method signature="CheckItemsContainsInOrderTest.checkItemsContainsInOrderTest(java.util.List, java.util.List)[pri:0, instance:test.CheckItemsContainsInOrderTest@57ea113a]" name="checkItemsContainsInOrderTest" class="test.CheckItemsContainsInOrderTest"/>
+        <method signature="CheckOutOfStockTest.checkOutOfStockTest()[pri:0, instance:test.CheckOutOfStockTest@acdb094]" name="checkOutOfStockTest" class="test.CheckOutOfStockTest"/>
+      </group> <!-- regression -->
+    </groups>
+    <test name="Surefire test" duration-ms="14575" started-at="2020-06-12T15:02:15 EEST" finished-at="2020-06-12T15:02:30 EEST">
+      <class name="test.CheckOutOfStockTest">
+        <test-method status="PASS" signature="init(org.testng.ITestContext)[pri:0, instance:test.CheckOutOfStockTest@acdb094]" name="init" is-config="true" duration-ms="2131" started-at="2020-06-12T15:02:26 EEST" finished-at="2020-06-12T15:02:28 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@758f4f03]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="checkOutOfStockTest()[pri:0, instance:test.CheckOutOfStockTest@acdb094]" name="checkOutOfStockTest" duration-ms="1291" started-at="2020-06-12T15:02:28 EEST" description="check out of stock" finished-at="2020-06-12T15:02:29 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutOfStockTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CheckOutOfStockTest@acdb094]" name="tearDown" is-config="true" duration-ms="546" started-at="2020-06-12T15:02:29 EEST" finished-at="2020-06-12T15:02:30 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.CheckOutOfStockTest -->
+      <class name="test.CheckItemsContainsInOrderTest">
+        <test-method status="PASS" signature="init(org.testng.ITestContext)[pri:0, instance:test.CheckItemsContainsInOrderTest@57ea113a]" name="init" is-config="true" duration-ms="2132" started-at="2020-06-12T15:02:22 EEST" finished-at="2020-06-12T15:02:24 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@758f4f03]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="checkItemsContainsInOrderTest(java.util.List, java.util.List)[pri:0, instance:test.CheckItemsContainsInOrderTest@57ea113a]" name="checkItemsContainsInOrderTest" duration-ms="1242" started-at="2020-06-12T15:02:24 EEST" description="check products" data-provider="getProducts" finished-at="2020-06-12T15:02:25 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[iPad 4 Mini, H&M T-Shirt White, Charli XCX - Sucker CD]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[$ 500.01, $ 10.99, $ 19.99]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkItemsContainsInOrderTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CheckItemsContainsInOrderTest@57ea113a]" name="tearDown" is-config="true" duration-ms="559" started-at="2020-06-12T15:02:25 EEST" finished-at="2020-06-12T15:02:26 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.CheckItemsContainsInOrderTest -->
+      <class name="test.CheckCountOfIpadInStockTest">
+        <test-method status="PASS" signature="init(org.testng.ITestContext)[pri:0, instance:test.CheckCountOfIpadInStockTest@4af0df05]" name="init" is-config="true" duration-ms="2125" started-at="2020-06-12T15:02:15 EEST" finished-at="2020-06-12T15:02:17 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@758f4f03]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="checkCountOfIpadInStockTest()[pri:0, instance:test.CheckCountOfIpadInStockTest@4af0df05]" name="checkCountOfIpadInStockTest" duration-ms="3942" started-at="2020-06-12T15:02:17 EEST" description="check count of ipad in stock" finished-at="2020-06-12T15:02:21 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCountOfIpadInStockTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.CheckCountOfIpadInStockTest@4af0df05]" name="tearDown" is-config="true" duration-ms="553" started-at="2020-06-12T15:02:21 EEST" finished-at="2020-06-12T15:02:22 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.CheckCountOfIpadInStockTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
