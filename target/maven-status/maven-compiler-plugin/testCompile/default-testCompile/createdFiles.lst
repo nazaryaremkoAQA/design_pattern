@@ -1,3 +1,11 @@
+pattern\test\GoogleTest.class
+test\base\BaseTest.class
+pattern\test\strategy\StrategyTest.class
 test\CheckItemsContainsInOrderTest.class
 test\CheckCountOfIpadInStockTest.class
+test\GoogleTest.class
+pattern\test\strategy\GoogleStrategyTest.class
+pattern\base\BaseTest.class
+pattern\test\factory\GoogleFactoryTest.class
+pattern\base\DriverFactory.class
 test\CheckOutOfStockTest.class
