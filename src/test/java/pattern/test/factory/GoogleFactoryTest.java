@@ -1,13 +1,11 @@
 package pattern.test.factory;
 
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pattern.base.BaseTest;
-import pattern.dataprovider.GoogleDP;
+import pattern.factory.dataprovider.GoogleDP;
 import pattern.factory.EnglishFactory;
-import pattern.factory.GoogleEnglishPage;
 import pattern.factory.GooglePage;
 import pattern.factory.IGoogleFactory;
 

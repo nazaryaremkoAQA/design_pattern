@@ -1,20 +1,18 @@
 package pattern.base;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import utils.Utils;
 
 public class BaseTest {
 
-    protected WebDriver driver;
+    protected Utils utils = new Utils();
+    protected WebDriver driver = DriverFactory.getDriver(utils.getProperty("browser"));
 
     @BeforeTest
-    public void setUpDriver(){
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chrome_windows_83.exe");
-        this.driver = new ChromeDriver();
+    public void setUpDriver() {
         driver.manage().window().maximize();
-
     }
 
     @AfterTest

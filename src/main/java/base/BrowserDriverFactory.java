@@ -4,9 +4,6 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
-
 
 public class BrowserDriverFactory {
 
@@ -34,13 +31,13 @@ public class BrowserDriverFactory {
         return chrome_options;
     }
 
-    private FirefoxOptions getFirefox_options(){
-        FirefoxOptions firefoxOptions = new FirefoxOptions();
-        firefoxOptions.addArguments("--headless");
-        firefoxOptions.addArguments("--no-sandbox");
-        firefoxOptions.addArguments("--disable-dev-shm-usage");
-        return firefoxOptions;
-    }
+//    private FirefoxOptions getFirefox_options(){
+//        FirefoxOptions firefoxOptions = new FirefoxOptions();
+//        firefoxOptions.addArguments("--headless");
+//        firefoxOptions.addArguments("--no-sandbox");
+//        firefoxOptions.addArguments("--disable-dev-shm-usage");
+//        return firefoxOptions;
+//    }
 
     private WebDriver createDriver() {
         log.info("Create drive: " + browser);
@@ -52,10 +49,10 @@ public class BrowserDriverFactory {
                 driver.set(new ChromeDriver(getChrome_options()));
                 break;
 
-            case "geckodriver":
-                System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver");
-                driver.set(new FirefoxDriver(getFirefox_options()));
-                break;
+//            case "geckodriver":
+//                System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver");
+//                driver.set(new FirefoxDriver(getFirefox_options()));
+//                break;
 
             case "chrome_linux_83":
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chrome_linux_83");

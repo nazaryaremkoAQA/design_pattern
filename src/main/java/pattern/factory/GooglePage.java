@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pattern.page.common.SearchWidget;
-import pattern.page.result.ResultState;
+import google.pages_for_udemy.common.SearchWidget;
+import google.pages_for_udemy.result.ResultState;
 
 import java.util.List;
 

@@ -1,5 +1,6 @@
 package pattern.factory;
 
+import com.google.common.base.Function;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -28,7 +29,7 @@ public class GoogleEnglishPage extends GooglePage {
 
     @Override
     public int getResultsCount() {
-        wait.until(d -> results.size() > 1);
+        wait.until((Function<? super WebDriver, Boolean>) d -> results.size() > 1);
         return results.size();
     }
 
