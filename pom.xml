@@ -8,17 +8,25 @@
     <artifactId>skyronic</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <version.org.jboss.arquillian>1.1.11.Final</version.org.jboss.arquillian>
+        <version.org.jboss.arquillian.drone>2.0.0.Final</version.org.jboss.arquillian.drone>
+        <version.org.jboss.arquillian.graphene>2.3.2</version.org.jboss.arquillian.graphene>
+        <version.screenshooter>2.1.0.CR1</version.screenshooter>
+    </properties>
     <build>
         <plugins>
-                 <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.5.1</version>
-                    <configuration>
-                        <source>1.8</source>
-                        <target>1.8</target>
-                    </configuration>
-                </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -41,15 +49,23 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>3.141.59</version>
-        </dependency>
-
-        <dependency>
             <groupId>com.sun.xml.ws</groupId>
             <artifactId>jaxws-rt</artifactId>
             <version>2.1.4</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/net.sf.sociaal/freetts -->
+        <dependency>
+            <groupId>net.sf.sociaal</groupId>
+            <artifactId>freetts</artifactId>
+            <version>1.2.2</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
         </dependency>
 
         <dependency>
@@ -57,6 +73,20 @@
             <artifactId>testng</artifactId>
             <version>7.1.0</version>
          </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.jboss.arquillian.graphene/graphene-webdriver-impl -->
+        <dependency>
+            <groupId>org.jboss.arquillian.graphene</groupId>
+            <artifactId>graphene-webdriver-impl</artifactId>
+            <version>${version.org.jboss.arquillian.graphene}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.jboss.arquillian.testng</groupId>
+            <artifactId>arquillian-testng-standalone</artifactId>
+            <version>1.6.0.Final</version>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -66,4 +96,25 @@
 
 
     </dependencies>
+
+<!--    <dependencyManagement>-->
+<!--        <dependencies>-->
+<!--            &lt;!&ndash; Arquillian Core dependencies &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.jboss.arquillian</groupId>-->
+<!--                <artifactId>arquillian-bom</artifactId>-->
+<!--                <version>${version.org.jboss.arquillian}</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash; Arquillian Drone dependencies and WebDriver/Selenium dependencies &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.jboss.arquillian.extension</groupId>-->
+<!--                <artifactId>arquillian-drone-bom</artifactId>-->
+<!--                <version>${version.org.jboss.arquillian.drone}</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
+<!--        </dependencies>-->
+<!--    </dependencyManagement>-->
 </project>

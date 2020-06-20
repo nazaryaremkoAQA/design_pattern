@@ -1,1 +1,3 @@
-some-text  
+*.class
+.idea
+*.dump
