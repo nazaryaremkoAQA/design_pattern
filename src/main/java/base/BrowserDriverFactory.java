@@ -4,6 +4,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class BrowserDriverFactory {
 
@@ -31,13 +32,13 @@ public class BrowserDriverFactory {
         return chrome_options;
     }
 
-//    private FirefoxOptions getFirefox_options(){
-//        FirefoxOptions firefoxOptions = new FirefoxOptions();
-//        firefoxOptions.addArguments("--headless");
-//        firefoxOptions.addArguments("--no-sandbox");
-//        firefoxOptions.addArguments("--disable-dev-shm-usage");
-//        return firefoxOptions;
-//    }
+    private FirefoxOptions getFirefox_options(){
+        FirefoxOptions firefoxOptions = new FirefoxOptions();
+        firefoxOptions.addArguments("--headless");
+        firefoxOptions.addArguments("--no-sandbox");
+        firefoxOptions.addArguments("--disable-dev-shm-usage");
+        return firefoxOptions;
+    }
 
     private WebDriver createDriver() {
         log.info("Create drive: " + browser);
