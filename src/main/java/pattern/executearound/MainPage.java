@@ -1,4 +1,4 @@
-package com.udemy.seleniumdesign.executearound;
+package pattern.executearound;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,6 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.function.Consumer;
+
+import static org.openqa.selenium.support.PageFactory.*;
+
 
 public class MainPage {
 
@@ -26,10 +29,10 @@ public class MainPage {
 
     public MainPage(WebDriver driver){
         this.driver = driver;
-        PageFactory.initElements(driver, this);
-        this.frameA = PageFactory.initElements(driver, FrameA.class);
-        this.frameB = PageFactory.initElements(driver, FrameB.class);
-        this.frameC = PageFactory.initElements(driver, FrameC.class);
+        initElements(driver, this);
+        this.frameA = initElements(driver, FrameA.class);
+        this.frameB = initElements(driver, FrameB.class);
+        this.frameC = initElements(driver, FrameC.class);
     }
 
     public void goTo(){

@@ -1,4 +1,4 @@
-package pattern.strategy.payment_app.actions;
+package pattern.proxy.payment_app.actions;
 
 import java.util.Map;
 

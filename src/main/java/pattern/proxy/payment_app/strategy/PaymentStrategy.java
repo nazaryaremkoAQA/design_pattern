@@ -1,10 +1,10 @@
-package pattern.strategy.payment_app.strategy;
+package pattern.proxy.payment_app.strategy;
 
 import org.openqa.selenium.WebDriver;
-import pattern.strategy.payment_app.actions.IPay;
-import pattern.strategy.payment_app.actions.PayByCreditCard;
-import pattern.strategy.payment_app.actions.PayByNetBanking;
-import pattern.strategy.payment_app.actions.PayByPayPal;
+import pattern.proxy.payment_app.actions.IPay;
+import pattern.proxy.payment_app.actions.PayByCreditCard;
+import pattern.proxy.payment_app.actions.PayByNetBanking;
+import pattern.proxy.payment_app.actions.PayByPayPal;
 
 public enum PaymentStrategy {
 

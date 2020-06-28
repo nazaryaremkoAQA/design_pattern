@@ -1,10 +1,10 @@
-package pattern.strategy.payment_app.main_page_blocks;
+package pattern.proxy.payment_app.main_page_blocks;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class UserInformationBlock extends AbstractComponent{
+public class UserInformationBlock extends AbstractComponent {
 
     @FindBy(id = "fn")
     private WebElement firstName;

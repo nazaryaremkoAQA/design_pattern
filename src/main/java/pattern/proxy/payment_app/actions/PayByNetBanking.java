@@ -1,7 +1,7 @@
-package pattern.strategy.payment_app.actions;
+package pattern.proxy.payment_app.actions;
 
 import org.openqa.selenium.WebDriver;
-import pattern.strategy.payment_app.main_page_blocks.NetBankingBlock;
+import pattern.proxy.payment_app.main_page_blocks.NetBankingBlock;
 
 import java.util.Map;
 

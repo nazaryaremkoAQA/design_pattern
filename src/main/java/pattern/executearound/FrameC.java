@@ -1,4 +1,4 @@
-package com.udemy.seleniumdesign.executearound;
+package pattern.executearound;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

@@ -1,7 +1,7 @@
-package pattern.strategy.payment_app.dataprovider;
+package pattern.proxy.payment_app.dataprovider;
 
 import org.testng.annotations.DataProvider;
-import pattern.strategy.payment_app.strategy.PaymentStrategy;
+import pattern.proxy.payment_app.strategy.PaymentStrategy;
 
 import java.util.HashMap;
 import java.util.Map;
